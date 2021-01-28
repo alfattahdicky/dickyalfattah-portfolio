@@ -6,8 +6,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
-
 module.exports = merge(common, {
   mode: "production",
   output: {
@@ -44,25 +42,6 @@ module.exports = merge(common, {
     new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
-    }),
-    new FaviconsWebpackPlugin({
-      logo: "./src/assets/dicky.png",
-      outputPath: "icons",
-      inject: true,
-      favicons: {
-        path: "/dist",
-        start_url: "/dist/index.html",
-        icons: {
-          android: true,
-          appleIcon: true,
-          coast: false,
-          favicons: true,
-          windows: true,
-          firefox: true,
-          appleStartup: false,
-          yandex: false,
-        },
-      },
     }),
   ],
   optimization: {
