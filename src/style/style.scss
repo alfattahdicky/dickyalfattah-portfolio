@@ -1,0 +1,250 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "aos/dist/aos.css";
+
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url(../assets/fonts/Lato-Black.woff2) format("woff2"),
+    url(../assets/fonts/Lato-Bold.woff2) format("woff2"),
+    url(../assets/fonts/Lato-Light.woff2) format("woff2"),
+    url(../assets/fonts/Lato-Italic.woff2) format("woff2"),
+    url(../assets/fonts/Lato-Regular.woff2) format("woff2"),
+    url(../assets/fonts/Lato-Thin.woff2) format("woff2");
+  font-display: swap;
+}
+
+$primary: #3379bb;
+$light-color: #e2d8cd;
+$dark-color: #0f0f13;
+@mixin hoverImage {
+  transform: scale(1);
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 2;
+  overflow-x: hidden;
+}
+
+.title {
+  color: $primary;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.home-title {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+// Navbar
+
+nav {
+  background-color: #000;
+  a {
+    color: $light-color;
+    &:hover {
+      color: $primary;
+    }
+  }
+  & .navbar-toggler,
+  & .navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.jumbotron {
+  background-color: $dark-color;
+  h1 .name {
+    font-weight: 900;
+    color: $primary;
+  }
+  .btn-home {
+    border: none;
+    outline: none;
+    background-color: $primary;
+    padding: 14px 20px;
+    border-radius: 5px;
+    transform: translateY(0);
+    transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    a {
+      text-decoration: none;
+    }
+    i {
+      margin-left: 10px;
+    }
+    &:hover {
+      transform: translateY(20px);
+    }
+  }
+}
+
+.about {
+  .image img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.skills {
+  background-color: $dark-color;
+  img {
+    $size: 120px;
+    width: $size;
+    height: $size;
+  }
+}
+
+.projects {
+  .link {
+    text-decoration: none;
+    color: $dark-color;
+    transition: color 0.3s;
+    img {
+      width: 300px;
+      height: auto;
+      object-position: center;
+      object-fit: cover;
+      @include hoverImage();
+    }
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.youtube {
+  background-color: $dark-color;
+  img {
+    width: 400px;
+    height: auto;
+    @include hoverImage();
+  }
+  a {
+    text-decoration: none;
+    .btn-visit {
+      background-color: $primary;
+      color: #fff;
+      outline: none;
+      border: none;
+      padding: 0.3rem 1.2rem;
+      border-radius: 5px;
+      transform: translateX(0);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      &:hover {
+        transform: translateX(3px);
+      }
+    }
+  }
+}
+
+.contact {
+  overflow: hidden;
+  input,
+  textarea {
+    width: 300px;
+  }
+  textarea {
+    height: 200px;
+  }
+  .hidden {
+    width: 0;
+    height: 0;
+  }
+  .form-control:focus {
+    box-shadow: none;
+    border-color: $primary;
+  }
+  .btn-send {
+    border: none;
+    outline: none;
+    border: 2px solid $primary;
+    background-color: transparent;
+    color: $primary;
+    padding: 0.4rem 3rem;
+    border-radius: 40px;
+    transition: color 0.3s, background-color 0.4s;
+    &:hover {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+}
+
+footer {
+  background-color: $dark-color;
+  a {
+    text-decoration: none;
+    svg {
+      $size: 40px;
+      width: $size;
+      height: $size;
+      margin: 0 5px 0;
+      cursor: pointer;
+      &:hover {
+        fill: rgb(129, 129, 129);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home-title {
+    font-size: 2.3rem;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .about {
+    .image img {
+      width: 500px;
+    }
+  }
+  .skills {
+    background-color: $dark-color;
+    img {
+      $size: 100px;
+      width: $size;
+      height: $size;
+    }
+  }
+  .projects {
+    .link {
+      img {
+        width: 200px;
+      }
+    }
+  }
+  .contact {
+    input,
+    textarea {
+      width: 500px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .home-title,
+  .title {
+    font-size: 2.5rem;
+  }
+  .projects {
+    .link {
+      img {
+        width: 400px;
+      }
+    }
+  }
+}
