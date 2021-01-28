@@ -9,4 +9,5 @@ AOS.init({
   duration: 800,
   useClassNames: true,
   once: true,
+  disable: "mobile",
 });
