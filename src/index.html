@@ -9,13 +9,16 @@
     <meta property="og:title" content="Portfolio">
     <meta property="og:image" content="https://i.ibb.co/c8CyyqH/og-img.png">
     <meta property="og:description" content="Explore Me and Let's Collaborate together">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <title>Dicky Al Fattah</title>
   </head>
   <body class="d-none">
       <!-- Navbar -->
-    <nav class="fixed-top navbar navbar-expand-md" id="navbar">
+    <nav class="fixed-top navbar navbar-expand-md">
       <div class="container">
         <a class="navbar-brand" href="#main">Dicky AL Fattah</a>
         <button
@@ -71,7 +74,7 @@
 
     <main class="my-md-4" >
       <!-- About  -->
-      <section class="about py-md-5 py-2" id="main">
+      <section class="about py-lg-5 py-2" id="main">
         <div class="container py-2">
           <div class="row gx-5 ">
             <div class="col-md-6 py-4 align-self-start" data-aos="fade-right">
@@ -104,7 +107,7 @@
       <!-- Skills  -->
       <section class="skills py-5" id="skills">
         <div class="container text-light py-2">
-          <h1 class="text-center pt-2 title">Our Skills</h1>
+          <h1 class="text-center pt-2 title">Skills</h1>
           <div class="row pt-4 text-center" data-aos="fade-up">
             <div class="col-md-4">
               <img
@@ -165,7 +168,7 @@
       <!-- Projects -->
       <section class="projects py-5" id="projects">
         <div class="container text-center py-3">
-          <h1 class="title">Our Projects</h1>
+          <h1 class="title">Projects</h1>
           <div class="row py-3">
             <div class="col-md-4" data-aos="zoom-in-up">
               <a href="https://food-track-al.netlify.app/" class="link">
@@ -207,7 +210,7 @@
       <!-- Youtube -->
       <section class="youtube py-3" id="youtube">
         <div class="container py-md-0 py-5">
-          <div class="text-light d-flex flex-column">
+          <div class="text-light d-md-flex flex-column">
             <div class="row">
               <div class="col-md-6 d-none d-md-block" data-aos="fade-right">
                 <a href="https://www.youtube.com/channel/UC7A30jVrT89zDjmkM8HhLeQ">
@@ -247,7 +250,7 @@
         <div class="container text-center mx-auto">
           <h1 class="title">Contact</h1>
           <p>Have Any Question Or Collaborate with Me.</p>
-          <form class="input overflow-hidden" name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true" data-aos="fade-down">
+          <form class="input" name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true" data-aos="fade-down">
             <input type="hidden" name="form-name" value="contact">
             <p class="hidden invisible h-0 w-0">
               <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -269,7 +272,7 @@
             <div class="input-message mb-3">
               <textarea
                 class="form-control mx-auto"
-                id="exampleFormControlTextarea1"
+                id="textarea"
                 rows="3"
                 placeholder="Message" required
               ></textarea>
