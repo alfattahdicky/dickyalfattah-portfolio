@@ -1,3 +1,5 @@
+import '../scss/style.scss'
+
 const toggler = document.getElementById("toggle");
 toggler.style.fontSize = "1.8rem";
 toggler.style.color = "white";

@@ -14,13 +14,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Dicky Al Fattah</title>
   </head>
   <body class="d-none">
       <!-- Navbar -->
-    <nav class="fixed-top navbar navbar-expand-md">
+    <nav class="fixed-top navbar navbar-expand-md" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#main">Dicky AL Fattah</a>
+        <a class="navbar-brand text-light" href="#main">Dicky AL Fattah</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -60,8 +61,8 @@
     <section
       class="jumbotron d-flex flex-column text-center vh-100 justify-content-center align-items-center text-light"
     >
-      <h1 class="home-title">
-        Hi, I'am <span class="name">Dicky AL Fattah</span> <br />
+      <h1 class="home-title fs-1 fw-semibold">
+        Hi, <span class="name">Dicky AL Fattah</span> <br />
         Front End Developer.
       </h1>
       <a href="#main">
@@ -77,7 +78,7 @@
       <section class="about py-lg-5 py-2" id="main">
         <div class="container py-2">
           <div class="row gx-5 ">
-            <div class="col-md-6 py-4 align-self-start" data-aos="fade-right">
+            <div class="col-md-6 py-4 align-self-start">
               <h1 class="title text-center text-md-start ">About Me.</h1>
               <div class="image py-3 py-md-0">
                 <img
@@ -91,7 +92,7 @@
                 I'm from Indonesia, I'm still a student and interested in working as a front-end developer with no experience but I made several projects that support being a front-end developer. I'm still a beginner in the website field, especially a front-end developer, but I'll do my best. I am active on several social media platforms such as telegram and youtube. I am interested in freelance opportunities and let's collaborate together.
               </p>
             </div>
-            <div class="col-md-6 gx-5 px-5 py-3 image" data-aos="fade-left" >
+            <div class="col-md-6 gx-5 px-5 py-3 image" >
               <img
                 src="./assets/al.png"
                 alt="dicky"
@@ -108,8 +109,8 @@
       <section class="skills py-5" id="skills">
         <div class="container text-light py-2">
           <h1 class="text-center pt-2 title">Skills</h1>
-          <div class="row pt-4 text-center" data-aos="fade-up">
-            <div class="col-md-4">
+          <div class="row pt-4 justify-content-md-center gap-4 text-center" >
+            <div class="col-md-3">
               <img
                 src="./assets/html5.svg"
                 alt="html"
@@ -117,7 +118,7 @@
               />
               <p>HTML5, Advance</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img
                 src="./assets/css3.svg"
                 alt="css"
@@ -125,40 +126,40 @@
               />
               <p>CSS, Advance</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img
                 src="./assets/javascript.svg"
                 alt="javascript"
                 class="js mx-auto d-block mb-2" loading="lazy"
               />
 
-              <p>JavaScript, Beginner</p>
+              <p>JavaScript, Intermediate</p>
             </div>
           </div>
-          <div class="row pt-3 text-center" data-aos="fade-up">
-            <div class="col-md-4">
+          <div class="row pt-4 justify-content-md-center gap-4  text-center">
+            <div class="col-md-3">
               <img
-                src="./assets/webpack.svg"
-                alt="webpack"
+                src="./assets/react.svg"
+                alt="react"
                 class="webpack mx-auto d-block mb-2" loading="lazy"
               />
-              <p>Webpack, Intermediate</p>
+              <p>React, Basic</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img
                 src="./assets/bootstrap.svg"
-                alt="sass"
-                class="sass mx-auto d-block mb-2" loading="lazy"
+                alt="bootstrap"
+                class="bootstrap mx-auto d-block mb-2" loading="lazy"
               />
               <p>Bootstrap, Intermediate</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img
-                src="./assets/git.svg"
-                alt="git"
+                src="./assets/tailwindcss.svg"
+                alt="tailwind"
                 class="git mx-auto d-block mb-2" loading="lazy"
               />
-              <p>Git, Beginner</p>
+              <p>Tailwind, Intermediate</p>
             </div>
           </div>
         </div>
@@ -169,20 +170,20 @@
       <section class="projects py-5" id="projects">
         <div class="container text-center py-3">
           <h1 class="title">Projects</h1>
-          <div class="row py-3">
-            <div class="col-md-4" data-aos="zoom-in-up">
+          <div class="row pt-4">
+            <div class="col-md-4">
               <a href="https://food-track-al.netlify.app/" class="link">
                 <img src="./assets/Food-track.png" alt="Food track" class="mb-2" loading="lazy" />
                 <p>Food Track</p>
               </a>
             </div>
-            <div class="col-md-4" data-aos="zoom-in-up">
+            <div class="col-md-4">
               <a href="https://football-hunt.web.app/" class="link">
                 <img src="./assets/football-hunt.png" alt="Football Hunt" class="mb-2" loading="lazy" />
                 <p>Football Hunt</p>
               </a>
             </div>
-            <div class="col-md-4" data-aos="zoom-in-up">
+            <div class="col-md-4">
               <a href="https://tripara-anugrah.netlify.app/" class="link">
                 <img src="./assets/tripara-anugrah.png" alt="Tripara Anugrah" class="mb-2" loading="lazy" />
                 <p>Tripara Anugrah</p>
@@ -190,16 +191,16 @@
             </div>
           </div>
           <div class="row py-md-2">
-            <div class="col-md-6" data-aos="zoom-in-up">
+            <div class="col-md-6">
               <a href="https://burger-indo.netlify.app/" class="link">
                 <img src="./assets/burger-indo.jpg" alt="Burger Indo" class="mb-2" loading="lazy" />
                 <p>Burger Indo</p>
               </a>
             </div>
-            <div class="col-md-6" data-aos="zoom-in-up">
-              <a href="https://telkom-duar.netlify.app/" class="link">
-                <img src="./assets/telkom-duar.png" alt="Telkom Duar" class="mb-2" loading="lazy" />
-                <p>Telkom Duar</p>
+            <div class="col-md-6">
+              <a href="https://demo-etimepnj.netlify.app" class="link">
+                <img src="./assets/etime.jpg" alt="Telkom Duar" class="mb-2" loading="lazy" />
+                <p>E-Time 2021</p>
               </a>
             </div>
           </div>
@@ -212,7 +213,7 @@
         <div class="container py-md-0 py-5">
           <div class="text-light d-md-flex flex-column">
             <div class="row">
-              <div class="col-md-6 d-none d-md-block" data-aos="fade-right">
+              <div class="col-md-6 d-none d-md-block">
                 <a href="https://www.youtube.com/channel/UC7A30jVrT89zDjmkM8HhLeQ">
                   <img
                     src="./assets/youtube.svg"
@@ -221,7 +222,7 @@
                   />
                 </a>
               </div>
-              <div class="col-md-6 align-self-center" data-aos="fade-left">
+              <div class="col-md-6 align-self-center">
                 <h1 class="title text-md-start text-center">
                   I Started Youtube Channel
                 </h1>
@@ -250,7 +251,7 @@
         <div class="container text-center mx-auto">
           <h1 class="title">Contact</h1>
           <p>Have Any Question Or Collaborate with Me.</p>
-          <form class="input" name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true" data-aos="fade-down">
+          <form class="input" name="Contact Form" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact">
             <p class="hidden invisible h-0 w-0">
               <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -302,11 +303,13 @@
             </div>
           </div>
           <div class="col-md-6 align-self-center mt-md-0 mt-4">
-            <p>&#169 Copyright 2021 Dicky Al Fattah</p>
+            <p>Copyright 2022 Dicky Al Fattah</p>
           </div>
         </div>
       </div>
     </footer>
     <!-- Finish Footer -->
+    
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
