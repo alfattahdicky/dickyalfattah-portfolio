@@ -113,7 +113,9 @@ section:not(.jumbotron) {
     transition: color 0.3s;
     img {
       width: 275px;
+      max-width: 100%;
       height: auto;
+      max-height: 300px;
       object-position: center;
       object-fit: cover;
       @include hoverImage();
